@@ -1,0 +1,9 @@
+body{
+  padding-top:80px;
+  word-wrap:break-word;
+  background-color: darkslategray;
+  text-align: center;
+}
+img{
+  height: 600px;
+}
