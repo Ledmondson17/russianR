@@ -2,8 +2,6 @@
 <html>
 <head>
     <title>The Bellagio</title>
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,20 +17,23 @@
     <!-- LOGIN FORM -->
     <form action="/login" method="post">
         <div class="form-group">
-            <label>OwnerEmail</label>
+            <label>Email</label>
             <input type="text" class="form-control" name="email">
         </div>
         <div class="form-group">
-            <label>Owner Password</label>
+            <label>Password</label>
             <input type="password" class="form-control" name="password">
         </div>
+        <select name="person">
+          <option value="player">Player</option>
+          <option value="admin">Admin</option>
+        </select>
 
         <button type="submit" class="btn btn-warning btn-lg">Login</button>
     </form>
 
     <hr>
 
-    <p>Need an account? <a href="/signup">Signup</a></p>
     <p>Or go <a href="/">home</a>.</p>
 
 
